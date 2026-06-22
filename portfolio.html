@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Yaswanth Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Cinzel:wght@700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b,#111827);
+    color:white;
+    overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    backdrop-filter:blur(12px);
+    background:rgba(255,255,255,0.05);
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-family:'Cinzel',serif;
+    font-size:2rem;
+    color:gold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:gold;
+}
+
+/* MARQUEE */
+
+marquee{
+    background:gold;
+    color:black;
+    padding:10px;
+    font-weight:700;
+}
+
+/* HERO */
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:4rem;
+    font-family:'Cinzel',serif;
+    color:gold;
+    text-shadow:0 0 25px gold;
+}
+
+.hero p{
+    margin-top:20px;
+    font-size:1.2rem;
+    max-width:700px;
+    color:#d1d5db;
+}
+
+.btns{
+    margin-top:35px;
+}
+
+.btn{
+    padding:15px 35px;
+    border:none;
+    border-radius:50px;
+    margin:10px;
+    cursor:pointer;
+    font-size:1rem;
+    transition:.4s;
+}
+
+.btn1{
+    background:gold;
+    color:black;
+}
+
+.btn2{
+    background:transparent;
+    border:2px solid gold;
+    color:gold;
+}
+
+.btn:hover{
+    transform:translateY(-5px) scale(1.05);
+    box-shadow:0 0 25px gold;
+}
+
+/* CARDS */
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    margin:60px 0 30px;
+    color:gold;
+}
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+    padding:30px;
+}
+
+.card{
+    width:320px;
+    padding:25px;
+    border-radius:25px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+    transition:.4s;
+    border:1px solid rgba(255,255,255,0.15);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 30px rgba(255,215,0,0.6);
+}
+
+.card h3{
+    color:gold;
+    margin-bottom:15px;
+}
+
+/* ABOUT */
+
+.about{
+    width:85%;
+    margin:auto;
+    text-align:center;
+    padding:50px;
+    background:rgba(255,255,255,0.05);
+    border-radius:25px;
+    backdrop-filter:blur(12px);
+}
+
+/* CONTACT */
+
+.contact{
+    text-align:center;
+    padding:70px 20px;
+}
+
+.contact button{
+    background:gold;
+    color:black;
+    padding:15px 40px;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:black;
+    color:#aaa;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">YG</div>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<marquee scrollamount="8">
+🚀 Cyber Security Enthusiast | Cloud Security Learner | Docker • AWS • Linux • Networking
+</marquee>
+
+<section class="hero">
+
+    <h1>Yaswanth Guru</h1>
+
+    <p>
+        B.Tech CSE (Cyber Security) Student passionate about
+        Cloud Security, AWS, Docker, Linux and building secure systems.
+    </p>
+
+    <div class="btns">
+        <button class="btn btn1">View Projects</button>
+        <button class="btn btn2">Hire Me</button>
+    </div>
+
+</section>
+
+<h2 class="section-title">My Skills</h2>
+
+<div class="cards">
+
+    <div class="card">
+        <h3>Linux</h3>
+        <p>System administration, commands, permissions and server management.</p>
+    </div>
+
+    <div class="card">
+        <h3>Docker</h3>
+        <p>Containers, images, networking, volumes and deployment workflows.</p>
+    </div>
+
+    <div class="card">
+        <h3>AWS</h3>
+        <p>Cloud infrastructure, EC2, VPC, IAM and security fundamentals.</p>
+    </div>
+
+</div>
+
+<h2 class="section-title">About Me</h2>
+
+<div class="about">
+    <p>
+        I am a Cyber Security student aiming to build expertise in
+        Cloud Security and become a high-impact security professional.
+        My interests include Linux, AWS, Docker, Networking and Security Engineering.
+    </p>
+
+<section class="contact">
+
+    <h2 style="margin-bottom:20px;color:gold;">
+        Let's Connect
+    </h2>
+
+    <p style="margin-bottom:25px;">
+        Ready to collaborate on Cloud & Security projects.
+    </p>
+
+    <button>Contact Me</button>
+
+</section>
+
+<footer>
+    © 2026 Yaswanth Guru | Cyber Security Portfolio
+</footer>
+
+</body>
+</html>
